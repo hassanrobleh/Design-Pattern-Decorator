@@ -7,7 +7,7 @@ import { Expresso } from "./Expresso";
 
 export class App {
 
-    static maina() {
+    static main() {
 
     
         let colombia: Boisson = new Colombia()
@@ -18,7 +18,7 @@ export class App {
 
     }
 
-    static main() {
+    static main2() {
         const bois: Boisson = new Expresso();
 
         // bois.setTaille("M");
