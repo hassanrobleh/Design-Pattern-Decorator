@@ -8,7 +8,7 @@ ces comportements.
 # Getting Started
 ```bash
 $ git clone https://github.com/hassanrobleh/Design-Pattern-Decorator.git
-$ cd Design_pattern-OBSERVER
+$ cd Design-Pattern-Decorator
 $ npm install
 $ npm run test
 ```
