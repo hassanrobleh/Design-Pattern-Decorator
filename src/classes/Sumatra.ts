@@ -1,6 +1,6 @@
-import { Boisson } from "./Boisson";
+import { Drink } from "./drink";
 
-export class Sumatra extends Boisson {
+export class Sumatra extends Drink {
 
     constructor() {
         super();

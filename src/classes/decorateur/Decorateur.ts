@@ -1,6 +1,6 @@
-import { Boisson } from "../Boisson";
+import { Drink } from "../drink";
 
-export abstract class Decorateur extends Boisson {
+export abstract class Decorateur extends Drink {
 
     // description: string = "";
 

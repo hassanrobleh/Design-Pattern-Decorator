@@ -1,11 +1,11 @@
-import { Boisson } from "../Boisson"
+import { Drink } from "../drink"
 import { Decorateur } from "./Decorateur"
 
 export class Lait extends Decorateur {
 
-    boisson: Boisson;
+    boisson: Drink;
 
-    constructor(b: Boisson) {
+    constructor(b: Drink) {
         super()
         this.boisson = b;
         

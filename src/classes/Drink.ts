@@ -1,4 +1,4 @@
-export abstract class Boisson {
+export abstract class Drink {
 
     description: string = "Boisson inconnue";
     
@@ -6,17 +6,17 @@ export abstract class Boisson {
     static MEDIUM: string = "M"
     static LARGE: string = "XL"
 
-    taille: string = Boisson.SMALL;
+    taille: string = Drink.SMALL;
 
     getDescription() {
         return this.description
     }
 
-    setTaille(t: string) {
+    setSize(t: string) {
         this.taille = t;
     }
 
-    getTaille() {
+    getSize() {
         return this.taille;
     }
 

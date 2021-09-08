@@ -1,24 +1,24 @@
-import { Boisson } from "../Boisson";
+import { Drink } from "../drink";
 import { Decorateur } from "./Decorateur"
 
 export class Camarel extends Decorateur {
 
-    boisson: Boisson;
+    drink: Drink;
 
-    constructor(b: Boisson) {
+    constructor(b: Drink) {
         super()
-        this.boisson = b;
+        this.drink = b;
     }
 
     getTaille() {
-        return this.boisson.getTaille();
+        return this.drink.getSize();
     }
 
     getDescription(): string {
-        return this.boisson.getDescription() + " Caramel,";
+        return this.drink.getDescription() + " Caramel,";
     }
 
     cout() {
-        return 0.30 + this.boisson.cout();
+        return 0.30 + this.drink.cout();
     }
 }

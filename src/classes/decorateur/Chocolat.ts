@@ -1,21 +1,21 @@
-import { Boisson } from "../Boisson";
+import { Drink } from "../drink";
 import { Decorateur } from "./Decorateur"
 
 export class Chocolat extends Decorateur {
 
-    boisson: Boisson;
+    drink: Drink;
 
-    constructor(b: Boisson) {
+    constructor(drink: Drink) {
         super()
-        this.boisson = b;
+        this.drink = drink;
     }
 
     getTaille() {
-        return this.boisson.getTaille();
+        return this.drink.getSize();
     }
 
     getDescription(): string {
-        return this.boisson.getDescription() + " Chocolat,";
+        return this.drink.getDescription() + " Chocolat,";
     }
 
     // cout() {
@@ -24,15 +24,14 @@ export class Chocolat extends Decorateur {
 
     cout() {
 
-        let cout: number = this.boisson.cout();
-        if(this.getTaille() === Boisson.PETITE) {
+        let cout: number = this.drink.cout();
+        if(this.getTaille() === Drink.SMALL) {
             cout += .10;
-        } else if(this.getTaille() === Boisson.NORMAL){
+        } else if(this.getTaille() === Drink.MEDIUM){
             cout += .15
-        } else if(this.getTaille() === Boisson.GRANDE) {
+        } else if(this.getTaille() === Drink.LARGE) {
             cout += .30;
         }
-
         return cout;
         // if(this.taille === "M") {
         //     return 2.5;
