@@ -12,7 +12,7 @@ export class App {
     
         let colombia: Boisson = new Colombia()
         colombia = new Lait(colombia);
-        colombia.setTaille(Boisson.PETITE);
+        colombia.setTaille(Boisson.SMALL);
         colombia = new Chocolat(colombia);
         return colombia.getDescription() + " €" + colombia.cout().toFixed(2);
 
@@ -22,7 +22,7 @@ export class App {
         const bois: Boisson = new Expresso();
 
         // bois.setTaille("M");
-        bois.setTaille(Boisson.NORMAL);
+        bois.setTaille(Boisson.MEDIUM);
 
         return bois.getDescription() + " €" + bois.cout().toFixed(2);
 

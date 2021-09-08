@@ -2,11 +2,11 @@ export abstract class Boisson {
 
     description: string = "Boisson inconnue";
     
-    static PETITE: string = "S"
-    static NORMAL: string = "M"
-    static GRANDE: string = "XL"
+    static SMALL: string = "S"
+    static MEDIUM: string = "M"
+    static LARGE: string = "XL"
 
-    taille: string = Boisson.PETITE;
+    taille: string = Boisson.SMALL;
 
     getDescription() {
         return this.description
